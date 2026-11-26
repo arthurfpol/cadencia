@@ -1,17 +1,52 @@
 {
   "name": "orientador-rotina",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
+  "description": "Cadência — Aplicativo nativo offline de orientação de rotina diária",
+  "author": "Arthur",
   "type": "module",
+  "main": "electron/main.cjs",
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "oxlint",
     "test": "vitest run",
     "test:watch": "vitest",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "desktop:dev": "concurrently -k \"vite --port 5180 --strictPort\" \"wait-on tcp:5180 && node electron/dev.cjs\"",
+    "desktop": "vite build && electron .",
+    "dist:win": "vite build && electron-builder --win portable nsis"
+  },
+  "build": {
+    "appId": "com.cadencia.rotina",
+    "productName": "Cadência",
+    "directories": {
+      "output": "release"
+    },
+    "files": [
+      "dist/**",
+      "electron/**",
+      "package.json"
+    ],
+    "win": {
+      "icon": "build/icon.png",
+      "target": [
+        "portable",
+        "nsis"
+      ]
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true,
+      "createDesktopShortcut": true,
+      "shortcutName": "Cadência"
+    },
+    "artifactName": "Cadencia-${version}-${arch}.${ext}"
   },
   "dependencies": {
+    "@fontsource/chakra-petch": "^5.3.0",
+    "@fontsource/ibm-plex-sans": "^5.3.0",
+    "@fontsource/jetbrains-mono": "^5.3.0",
     "lucide-react": "^1.80.0",
     "react": "^19.3.1",
     "react-dom": "^19.3.1"
@@ -24,10 +59,14 @@
     "@types/react": "^19.3.0",
     "@types/react-dom": "^19.3.0",
     "@vitejs/plugin-react": "^6.1.2",
+    "concurrently": "^10.0.7",
+    "electron": "^45.5.0",
+    "electron-builder": "^26.18.0",
     "jsdom": "^31.0.1",
     "oxlint": "^1.90.0",
     "typescript": "~7.0.2",
     "vite": "^8.3.6",
-    "vitest": "^5.1.2"
+    "vitest": "^5.1.2",
+    "wait-on": "^9.5.1"
   }
 }

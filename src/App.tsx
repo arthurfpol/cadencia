@@ -58,7 +58,7 @@ export function App() {
   const [activeView, setActiveView] = useState<ActiveView>('hoje');
   const [theme, setTheme] = useState<'light' | 'dark'>(() => {
     const attr = document.documentElement.getAttribute('data-theme');
-    return attr === 'dark' ? 'dark' : 'light';
+    return attr === 'light' ? 'light' : 'dark';
   });
   const [clockHHMM, setClockHHMM] = useState<string>(() => getCurrentTimeHHMM());
   const [customTimeOverride, setCustomTimeOverride] = useState<string | null>(null);
@@ -557,8 +557,29 @@ export function App() {
     tabRefs.current[nextTab]?.focus();
   };
 
+  const isNative = typeof window !== 'undefined' && Boolean(window.cadencia?.isNative);
+
   return (
     <div className="app-shell">
+      {isNative ? (
+        <div className="native-titlebar" aria-hidden="true">
+          <svg
+            className="native-titlebar-mark"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path d="M12 2L22 12L12 22L2 12L12 2Z" stroke="#ffb224" strokeWidth="2" />
+            <path d="M12 6L18 12L12 18L6 12L12 6Z" fill="#ffb224" />
+          </svg>
+          <span className="native-titlebar-name">Cadência</span>
+          <span className="native-titlebar-status">
+            <span className="native-titlebar-dot" />
+            Offline · dados neste computador
+          </span>
+        </div>
+      ) : null}
+
       <a href="#conteudo-principal" className="skip-link">
         Pular para a orientação principal
       </a>
@@ -836,7 +857,7 @@ export function App() {
             <span>Alternar seções</span>
           </li>
         </ul>
-        <span>Dados salvos apenas localmente neste navegador.</span>
+        <span>Dados salvos apenas neste computador. Funciona sem internet.</span>
       </footer>
 
       {isModalOpen ? (

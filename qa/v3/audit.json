@@ -1,0 +1,1053 @@
+{
+  "url": "http://localhost:5181/",
+  "generatedAt": "2026-11-26T00:56:25.253Z",
+  "scope": "Verificacoes automaticas de uma pagina; nao comprova conformidade WCAG ou Core Web Vitals de campo.",
+  "manualChecks": [
+    "Inspecionar screenshots",
+    "Teclado, foco e dialogs",
+    "Fluxo principal e formularios",
+    "Texto a 200% e reflow",
+    "Movimento reduzido",
+    "Performance em laboratorio e campo"
+  ],
+  "viewports": [
+    {
+      "name": "mobile",
+      "width": 390,
+      "height": 844,
+      "httpStatus": 200,
+      "screenshot": "mobile.png",
+      "layout": {
+        "viewport": 390,
+        "scrollWidth": 390,
+        "horizontalOverflow": false,
+        "brokenImages": [],
+        "title": "Cadência — Orientação de Rotina Diária",
+        "language": "pt-BR"
+      },
+      "errors": [],
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/color-contrast?application=playwright",
+          "targets": [
+            [
+              "h1"
+            ],
+            [
+              ".brand-subtitle"
+            ],
+            [
+              ".time-simulator-label"
+            ],
+            [
+              "button[aria-label=\"Ativar tema Neblina (claro)\"] > span"
+            ],
+            [
+              "label[for=\"intencao-diaria\"]"
+            ],
+            [
+              "#energia-label"
+            ],
+            [
+              "#tab-hoje > span"
+            ],
+            [
+              "#tab-planejar > span"
+            ],
+            [
+              "#tab-ritmo > span"
+            ],
+            [
+              ".day-progress-meta > span:nth-child(1)"
+            ],
+            [
+              ".day-progress-percent"
+            ],
+            [
+              ".guidance-banner-text"
+            ],
+            [
+              ".guidance-banner-actions > .btn-primary.btn"
+            ],
+            [
+              ".guidance-banner-actions > .btn-secondary.btn"
+            ],
+            [
+              ".badge-active.badge > span"
+            ],
+            [
+              ".badge-neutral"
+            ],
+            [
+              ".compass-time-window"
+            ],
+            [
+              "#compass-current-title"
+            ],
+            [
+              ".cue-callout-title > span"
+            ],
+            [
+              ".cue-callout-body"
+            ],
+            [
+              ".floor-box-title"
+            ],
+            [
+              ".floor-box-body"
+            ],
+            [
+              "button[aria-controls=\"painel-destravar\"] > span"
+            ],
+            [
+              "#timer-group-label"
+            ],
+            [
+              ".timer-ghost"
+            ],
+            [
+              ".timer-digits"
+            ],
+            [
+              ".timer-status-text"
+            ],
+            [
+              ".timer-actions > .btn-primary.btn > span"
+            ],
+            [
+              ".btn-secondary.btn:nth-child(2) > span"
+            ],
+            [
+              ".timer-actions > .btn-secondary.btn:nth-child(3) > span"
+            ],
+            [
+              ".timer-actions > .btn-ghost.btn > span"
+            ],
+            [
+              ".steps-heading"
+            ],
+            [
+              "li:nth-child(1) > .step-item-label > span"
+            ],
+            [
+              "li:nth-child(2) > .step-item-label > span"
+            ],
+            [
+              "li:nth-child(3) > .step-item-label > span"
+            ],
+            [
+              "label[for=\"nota-eq-8\"]"
+            ],
+            [
+              "#nota-eq-8"
+            ],
+            [
+              ".compass-outcome-bar > .btn-primary.btn > span"
+            ],
+            [
+              ".compass-outcome-bar > .btn-soft.btn > span"
+            ],
+            [
+              ".compass-outcome-bar > .btn-ghost.btn > span"
+            ],
+            [
+              "#timeline-heading"
+            ],
+            [
+              ".section-subtitle"
+            ],
+            [
+              ".header-action-row > .btn-secondary.btn > span"
+            ],
+            [
+              ".header-action-row > .btn-primary.btn > span"
+            ],
+            [
+              ".filter-chip:nth-child(1)"
+            ],
+            [
+              ".filter-chip:nth-child(2)"
+            ],
+            [
+              ".filter-chip:nth-child(3)"
+            ],
+            [
+              ".filter-chip:nth-child(4)"
+            ],
+            [
+              ".timeline-item:nth-child(1) > .timeline-item-top > .timeline-time"
+            ],
+            [
+              ".timeline-item:nth-child(1) > .timeline-item-top > .timeline-badges > .badge-overdue.badge"
+            ],
+            [
+              ".timeline-item:nth-child(1) > .timeline-title"
+            ],
+            [
+              ".timeline-item:nth-child(1) > .timeline-cue"
+            ],
+            [
+              ".timeline-item:nth-child(1) > .timeline-item-actions > .timeline-primary-actions > .btn-soft.btn > span"
+            ],
+            [
+              ".timeline-item:nth-child(1) > .timeline-item-actions > .timeline-primary-actions > .btn-ghost.btn:nth-child(2) > span"
+            ],
+            [
+              ".timeline-item:nth-child(1) > .timeline-item-actions > .timeline-primary-actions > .btn-ghost.btn:nth-child(3) > span"
+            ],
+            [
+              ".timeline-item:nth-child(2) > .timeline-item-top > .timeline-time"
+            ],
+            [
+              ".timeline-item:nth-child(2) > .timeline-item-top > .timeline-badges > .badge-overdue.badge"
+            ],
+            [
+              ".timeline-item:nth-child(2) > .timeline-title"
+            ],
+            [
+              ".timeline-item:nth-child(2) > .timeline-cue"
+            ],
+            [
+              ".timeline-item:nth-child(2) > .timeline-item-actions > .timeline-primary-actions > .btn-soft.btn > span"
+            ],
+            [
+              ".timeline-item:nth-child(2) > .timeline-item-actions > .timeline-primary-actions > .btn-ghost.btn:nth-child(2) > span"
+            ],
+            [
+              ".timeline-item:nth-child(2) > .timeline-item-actions > .timeline-primary-actions > .btn-ghost.btn:nth-child(3) > span"
+            ],
+            [
+              ".timeline-item:nth-child(3) > .timeline-item-top > .timeline-time"
+            ],
+            [
+              ".timeline-item:nth-child(3) > .timeline-item-top > .timeline-badges > .badge-overdue.badge"
+            ],
+            [
+              ".timeline-item:nth-child(3) > .timeline-title"
+            ],
+            [
+              ".timeline-item:nth-child(3) > .timeline-cue"
+            ],
+            [
+              ".timeline-item:nth-child(3) > .timeline-item-actions > .timeline-primary-actions > .btn-soft.btn > span"
+            ],
+            [
+              ".timeline-item:nth-child(3) > .timeline-item-actions > .timeline-primary-actions > .btn-ghost.btn:nth-child(2) > span"
+            ],
+            [
+              ".timeline-item:nth-child(3) > .timeline-item-actions > .timeline-primary-actions > .btn-ghost.btn:nth-child(3) > span"
+            ],
+            [
+              ".timeline-item:nth-child(4) > .timeline-item-top > .timeline-time"
+            ],
+            [
+              ".timeline-item:nth-child(4) > .timeline-item-top > .timeline-badges > .badge-overdue.badge"
+            ],
+            [
+              ".timeline-item:nth-child(4) > .timeline-title"
+            ],
+            [
+              ".timeline-item:nth-child(4) > .timeline-cue"
+            ],
+            [
+              ".timeline-item:nth-child(4) > .timeline-item-actions > .timeline-primary-actions > .btn-soft.btn > span"
+            ],
+            [
+              ".timeline-item:nth-child(4) > .timeline-item-actions > .timeline-primary-actions > .btn-ghost.btn:nth-child(2) > span"
+            ],
+            [
+              ".timeline-item:nth-child(4) > .timeline-item-actions > .timeline-primary-actions > .btn-ghost.btn:nth-child(3) > span"
+            ],
+            [
+              ".timeline-item:nth-child(5) > .timeline-item-top > .timeline-time"
+            ],
+            [
+              ".timeline-item:nth-child(5) > .timeline-item-top > .timeline-badges > .badge-overdue.badge"
+            ],
+            [
+              ".timeline-item:nth-child(5) > .timeline-title"
+            ],
+            [
+              ".timeline-item:nth-child(5) > .timeline-cue"
+            ],
+            [
+              ".timeline-item:nth-child(5) > .timeline-item-actions > .timeline-primary-actions > .btn-soft.btn > span"
+            ],
+            [
+              ".timeline-item:nth-child(5) > .timeline-item-actions > .timeline-primary-actions > .btn-ghost.btn:nth-child(2) > span"
+            ],
+            [
+              ".timeline-item:nth-child(5) > .timeline-item-actions > .timeline-primary-actions > .btn-ghost.btn:nth-child(3) > span"
+            ],
+            [
+              ".timeline-item:nth-child(6) > .timeline-item-top > .timeline-time"
+            ],
+            [
+              ".timeline-item:nth-child(6) > .timeline-item-top > .timeline-badges > .badge-overdue.badge"
+            ],
+            [
+              ".timeline-item:nth-child(6) > .timeline-title"
+            ],
+            [
+              ".timeline-item:nth-child(6) > .timeline-cue"
+            ],
+            [
+              ".timeline-item:nth-child(6) > .timeline-item-actions > .timeline-primary-actions > .btn-soft.btn > span"
+            ],
+            [
+              ".timeline-item:nth-child(6) > .timeline-item-actions > .timeline-primary-actions > .btn-ghost.btn:nth-child(2) > span"
+            ],
+            [
+              ".timeline-item:nth-child(6) > .timeline-item-actions > .timeline-primary-actions > .btn-ghost.btn:nth-child(3) > span"
+            ],
+            [
+              ".timeline-item:nth-child(7) > .timeline-item-top > .timeline-time"
+            ],
+            [
+              ".timeline-item:nth-child(7) > .timeline-item-top > .timeline-badges > .badge-overdue.badge"
+            ],
+            [
+              ".timeline-item:nth-child(7) > .timeline-title"
+            ],
+            [
+              ".timeline-item:nth-child(7) > .timeline-cue"
+            ],
+            [
+              ".timeline-item:nth-child(7) > .timeline-item-actions > .timeline-primary-actions > .btn-soft.btn > span"
+            ],
+            [
+              ".timeline-item:nth-child(7) > .timeline-item-actions > .timeline-primary-actions > .btn-ghost.btn:nth-child(2) > span"
+            ],
+            [
+              ".timeline-item:nth-child(7) > .timeline-item-actions > .timeline-primary-actions > .btn-ghost.btn:nth-child(3) > span"
+            ],
+            [
+              ".timeline-item-guided > .timeline-item-top > .timeline-time"
+            ],
+            [
+              ".timeline-badges > .badge-active.badge"
+            ],
+            [
+              ".timeline-item-guided > .timeline-title"
+            ],
+            [
+              ".timeline-item-guided > .timeline-cue"
+            ],
+            [
+              ".btn-ghost.btn:nth-child(1) > span"
+            ],
+            [
+              ".timeline-item-guided > .timeline-item-actions > .timeline-primary-actions > .btn-ghost.btn:nth-child(2) > span"
+            ],
+            [
+              ".shortcut-item:nth-child(1) > span"
+            ],
+            [
+              ".shortcut-item:nth-child(2) > span"
+            ],
+            [
+              ".shortcut-item:nth-child(3) > span"
+            ],
+            [
+              "footer > span"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "name": "tablet",
+      "width": 768,
+      "height": 1024,
+      "httpStatus": 200,
+      "screenshot": "tablet.png",
+      "layout": {
+        "viewport": 768,
+        "scrollWidth": 768,
+        "horizontalOverflow": false,
+        "brokenImages": [],
+        "title": "Cadência — Orientação de Rotina Diária",
+        "language": "pt-BR"
+      },
+      "errors": [],
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/color-contrast?application=playwright",
+          "targets": [
+            [
+              "h1"
+            ],
+            [
+              ".brand-subtitle"
+            ],
+            [
+              ".time-simulator-label"
+            ],
+            [
+              "button[aria-label=\"Ativar tema Neblina (claro)\"] > span"
+            ],
+            [
+              "label[for=\"intencao-diaria\"]"
+            ],
+            [
+              "#energia-label"
+            ],
+            [
+              "#tab-hoje > span"
+            ],
+            [
+              "#tab-planejar > span"
+            ],
+            [
+              "#tab-ritmo > span"
+            ],
+            [
+              ".day-progress-meta > span:nth-child(1)"
+            ],
+            [
+              ".day-progress-percent"
+            ],
+            [
+              ".guidance-banner-text"
+            ],
+            [
+              ".guidance-banner-actions > .btn-primary.btn"
+            ],
+            [
+              ".guidance-banner-actions > .btn-secondary.btn"
+            ],
+            [
+              ".badge-active.badge > span"
+            ],
+            [
+              ".badge-neutral"
+            ],
+            [
+              ".compass-time-window"
+            ],
+            [
+              "#compass-current-title"
+            ],
+            [
+              ".cue-callout-title > span"
+            ],
+            [
+              ".cue-callout-body"
+            ],
+            [
+              ".floor-box-title"
+            ],
+            [
+              ".floor-box-body"
+            ],
+            [
+              "button[aria-controls=\"painel-destravar\"] > span"
+            ],
+            [
+              "#timer-group-label"
+            ],
+            [
+              ".timer-ghost"
+            ],
+            [
+              ".timer-digits"
+            ],
+            [
+              ".timer-status-text"
+            ],
+            [
+              ".timer-actions > .btn-primary.btn > span"
+            ],
+            [
+              ".btn-secondary.btn:nth-child(2) > span"
+            ],
+            [
+              ".timer-actions > .btn-secondary.btn:nth-child(3) > span"
+            ],
+            [
+              ".timer-actions > .btn-ghost.btn > span"
+            ],
+            [
+              ".steps-heading"
+            ],
+            [
+              "li:nth-child(1) > .step-item-label > span"
+            ],
+            [
+              "li:nth-child(2) > .step-item-label > span"
+            ],
+            [
+              "li:nth-child(3) > .step-item-label > span"
+            ],
+            [
+              "label[for=\"nota-eq-8\"]"
+            ],
+            [
+              "#nota-eq-8"
+            ],
+            [
+              ".compass-outcome-bar > .btn-primary.btn > span"
+            ],
+            [
+              ".compass-outcome-bar > .btn-soft.btn > span"
+            ],
+            [
+              ".compass-outcome-bar > .btn-ghost.btn > span"
+            ],
+            [
+              "#timeline-heading"
+            ],
+            [
+              ".section-subtitle"
+            ],
+            [
+              ".header-action-row > .btn-secondary.btn > span"
+            ],
+            [
+              ".header-action-row > .btn-primary.btn > span"
+            ],
+            [
+              ".filter-chip:nth-child(1)"
+            ],
+            [
+              ".filter-chip:nth-child(2)"
+            ],
+            [
+              ".filter-chip:nth-child(3)"
+            ],
+            [
+              ".filter-chip:nth-child(4)"
+            ],
+            [
+              ".timeline-item:nth-child(1) > .timeline-item-top > .timeline-time"
+            ],
+            [
+              ".timeline-item:nth-child(1) > .timeline-item-top > .timeline-badges > .badge-overdue.badge"
+            ],
+            [
+              ".timeline-item:nth-child(1) > .timeline-title"
+            ],
+            [
+              ".timeline-item:nth-child(1) > .timeline-cue"
+            ],
+            [
+              ".timeline-item:nth-child(1) > .timeline-item-actions > .timeline-primary-actions > .btn-soft.btn > span"
+            ],
+            [
+              ".timeline-item:nth-child(1) > .timeline-item-actions > .timeline-primary-actions > .btn-ghost.btn:nth-child(2) > span"
+            ],
+            [
+              ".timeline-item:nth-child(1) > .timeline-item-actions > .timeline-primary-actions > .btn-ghost.btn:nth-child(3) > span"
+            ],
+            [
+              ".timeline-item:nth-child(2) > .timeline-item-top > .timeline-time"
+            ],
+            [
+              ".timeline-item:nth-child(2) > .timeline-item-top > .timeline-badges > .badge-overdue.badge"
+            ],
+            [
+              ".timeline-item:nth-child(2) > .timeline-title"
+            ],
+            [
+              ".timeline-item:nth-child(2) > .timeline-cue"
+            ],
+            [
+              ".timeline-item:nth-child(2) > .timeline-item-actions > .timeline-primary-actions > .btn-soft.btn > span"
+            ],
+            [
+              ".timeline-item:nth-child(2) > .timeline-item-actions > .timeline-primary-actions > .btn-ghost.btn:nth-child(2) > span"
+            ],
+            [
+              ".timeline-item:nth-child(2) > .timeline-item-actions > .timeline-primary-actions > .btn-ghost.btn:nth-child(3) > span"
+            ],
+            [
+              ".timeline-item:nth-child(3) > .timeline-item-top > .timeline-time"
+            ],
+            [
+              ".timeline-item:nth-child(3) > .timeline-item-top > .timeline-badges > .badge-overdue.badge"
+            ],
+            [
+              ".timeline-item:nth-child(3) > .timeline-title"
+            ],
+            [
+              ".timeline-item:nth-child(3) > .timeline-cue"
+            ],
+            [
+              ".timeline-item:nth-child(3) > .timeline-item-actions > .timeline-primary-actions > .btn-soft.btn > span"
+            ],
+            [
+              ".timeline-item:nth-child(3) > .timeline-item-actions > .timeline-primary-actions > .btn-ghost.btn:nth-child(2) > span"
+            ],
+            [
+              ".timeline-item:nth-child(3) > .timeline-item-actions > .timeline-primary-actions > .btn-ghost.btn:nth-child(3) > span"
+            ],
+            [
+              ".timeline-item:nth-child(4) > .timeline-item-top > .timeline-time"
+            ],
+            [
+              ".timeline-item:nth-child(4) > .timeline-item-top > .timeline-badges > .badge-overdue.badge"
+            ],
+            [
+              ".timeline-item:nth-child(4) > .timeline-title"
+            ],
+            [
+              ".timeline-item:nth-child(4) > .timeline-cue"
+            ],
+            [
+              ".timeline-item:nth-child(4) > .timeline-item-actions > .timeline-primary-actions > .btn-soft.btn > span"
+            ],
+            [
+              ".timeline-item:nth-child(4) > .timeline-item-actions > .timeline-primary-actions > .btn-ghost.btn:nth-child(2) > span"
+            ],
+            [
+              ".timeline-item:nth-child(4) > .timeline-item-actions > .timeline-primary-actions > .btn-ghost.btn:nth-child(3) > span"
+            ],
+            [
+              ".timeline-item:nth-child(5) > .timeline-item-top > .timeline-time"
+            ],
+            [
+              ".timeline-item:nth-child(5) > .timeline-item-top > .timeline-badges > .badge-overdue.badge"
+            ],
+            [
+              ".timeline-item:nth-child(5) > .timeline-title"
+            ],
+            [
+              ".timeline-item:nth-child(5) > .timeline-cue"
+            ],
+            [
+              ".timeline-item:nth-child(5) > .timeline-item-actions > .timeline-primary-actions > .btn-soft.btn > span"
+            ],
+            [
+              ".timeline-item:nth-child(5) > .timeline-item-actions > .timeline-primary-actions > .btn-ghost.btn:nth-child(2) > span"
+            ],
+            [
+              ".timeline-item:nth-child(5) > .timeline-item-actions > .timeline-primary-actions > .btn-ghost.btn:nth-child(3) > span"
+            ],
+            [
+              ".timeline-item:nth-child(6) > .timeline-item-top > .timeline-time"
+            ],
+            [
+              ".timeline-item:nth-child(6) > .timeline-item-top > .timeline-badges > .badge-overdue.badge"
+            ],
+            [
+              ".timeline-item:nth-child(6) > .timeline-title"
+            ],
+            [
+              ".timeline-item:nth-child(6) > .timeline-cue"
+            ],
+            [
+              ".timeline-item:nth-child(6) > .timeline-item-actions > .timeline-primary-actions > .btn-soft.btn > span"
+            ],
+            [
+              ".timeline-item:nth-child(6) > .timeline-item-actions > .timeline-primary-actions > .btn-ghost.btn:nth-child(2) > span"
+            ],
+            [
+              ".timeline-item:nth-child(6) > .timeline-item-actions > .timeline-primary-actions > .btn-ghost.btn:nth-child(3) > span"
+            ],
+            [
+              ".timeline-item:nth-child(7) > .timeline-item-top > .timeline-time"
+            ],
+            [
+              ".timeline-item:nth-child(7) > .timeline-item-top > .timeline-badges > .badge-overdue.badge"
+            ],
+            [
+              ".timeline-item:nth-child(7) > .timeline-title"
+            ],
+            [
+              ".timeline-item:nth-child(7) > .timeline-cue"
+            ],
+            [
+              ".timeline-item:nth-child(7) > .timeline-item-actions > .timeline-primary-actions > .btn-soft.btn > span"
+            ],
+            [
+              ".timeline-item:nth-child(7) > .timeline-item-actions > .timeline-primary-actions > .btn-ghost.btn:nth-child(2) > span"
+            ],
+            [
+              ".timeline-item:nth-child(7) > .timeline-item-actions > .timeline-primary-actions > .btn-ghost.btn:nth-child(3) > span"
+            ],
+            [
+              ".timeline-item-guided > .timeline-item-top > .timeline-time"
+            ],
+            [
+              ".timeline-badges > .badge-active.badge"
+            ],
+            [
+              ".timeline-item-guided > .timeline-title"
+            ],
+            [
+              ".timeline-item-guided > .timeline-cue"
+            ],
+            [
+              ".btn-ghost.btn:nth-child(1) > span"
+            ],
+            [
+              ".timeline-item-guided > .timeline-item-actions > .timeline-primary-actions > .btn-ghost.btn:nth-child(2) > span"
+            ],
+            [
+              ".shortcut-item:nth-child(1) > span"
+            ],
+            [
+              ".shortcut-item:nth-child(2) > span"
+            ],
+            [
+              ".shortcut-item:nth-child(3) > span"
+            ],
+            [
+              "footer > span"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "name": "desktop",
+      "width": 1440,
+      "height": 900,
+      "httpStatus": 200,
+      "screenshot": "desktop.png",
+      "layout": {
+        "viewport": 1440,
+        "scrollWidth": 1440,
+        "horizontalOverflow": false,
+        "brokenImages": [],
+        "title": "Cadência — Orientação de Rotina Diária",
+        "language": "pt-BR"
+      },
+      "errors": [],
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/color-contrast?application=playwright",
+          "targets": [
+            [
+              "h1"
+            ],
+            [
+              ".brand-subtitle"
+            ],
+            [
+              ".time-simulator-label"
+            ],
+            [
+              "button[aria-label=\"Ativar tema Neblina (claro)\"] > span"
+            ],
+            [
+              "label[for=\"intencao-diaria\"]"
+            ],
+            [
+              "#energia-label"
+            ],
+            [
+              "#tab-hoje > span"
+            ],
+            [
+              "#tab-planejar > span"
+            ],
+            [
+              "#tab-ritmo > span"
+            ],
+            [
+              ".day-progress-meta > span:nth-child(1)"
+            ],
+            [
+              ".day-progress-percent"
+            ],
+            [
+              ".guidance-banner-text"
+            ],
+            [
+              ".guidance-banner-actions > .btn-primary.btn"
+            ],
+            [
+              ".guidance-banner-actions > .btn-secondary.btn"
+            ],
+            [
+              ".badge-active.badge > span"
+            ],
+            [
+              ".badge-neutral"
+            ],
+            [
+              ".compass-time-window"
+            ],
+            [
+              "#compass-current-title"
+            ],
+            [
+              ".cue-callout-title > span"
+            ],
+            [
+              ".cue-callout-body"
+            ],
+            [
+              ".floor-box-title"
+            ],
+            [
+              ".floor-box-body"
+            ],
+            [
+              "button[aria-controls=\"painel-destravar\"] > span"
+            ],
+            [
+              "#timer-group-label"
+            ],
+            [
+              ".timer-ghost"
+            ],
+            [
+              ".timer-digits"
+            ],
+            [
+              ".timer-status-text"
+            ],
+            [
+              ".timer-actions > .btn-primary.btn > span"
+            ],
+            [
+              ".btn-secondary.btn:nth-child(2) > span"
+            ],
+            [
+              ".timer-actions > .btn-secondary.btn:nth-child(3) > span"
+            ],
+            [
+              ".timer-actions > .btn-ghost.btn > span"
+            ],
+            [
+              ".steps-heading"
+            ],
+            [
+              "li:nth-child(1) > .step-item-label > span"
+            ],
+            [
+              "li:nth-child(2) > .step-item-label > span"
+            ],
+            [
+              "li:nth-child(3) > .step-item-label > span"
+            ],
+            [
+              "label[for=\"nota-eq-8\"]"
+            ],
+            [
+              "#nota-eq-8"
+            ],
+            [
+              ".compass-outcome-bar > .btn-primary.btn > span"
+            ],
+            [
+              ".compass-outcome-bar > .btn-soft.btn > span"
+            ],
+            [
+              ".compass-outcome-bar > .btn-ghost.btn > span"
+            ],
+            [
+              "#timeline-heading"
+            ],
+            [
+              ".section-subtitle"
+            ],
+            [
+              ".header-action-row > .btn-secondary.btn > span"
+            ],
+            [
+              ".header-action-row > .btn-primary.btn > span"
+            ],
+            [
+              ".filter-chip:nth-child(1)"
+            ],
+            [
+              ".filter-chip:nth-child(2)"
+            ],
+            [
+              ".filter-chip:nth-child(3)"
+            ],
+            [
+              ".filter-chip:nth-child(4)"
+            ],
+            [
+              ".timeline-item:nth-child(1) > .timeline-item-top > .timeline-time"
+            ],
+            [
+              ".timeline-item:nth-child(1) > .timeline-item-top > .timeline-badges > .badge-overdue.badge"
+            ],
+            [
+              ".timeline-item:nth-child(1) > .timeline-title"
+            ],
+            [
+              ".timeline-item:nth-child(1) > .timeline-cue"
+            ],
+            [
+              ".timeline-item:nth-child(1) > .timeline-item-actions > .timeline-primary-actions > .btn-soft.btn > span"
+            ],
+            [
+              ".timeline-item:nth-child(1) > .timeline-item-actions > .timeline-primary-actions > .btn-ghost.btn:nth-child(2) > span"
+            ],
+            [
+              ".timeline-item:nth-child(1) > .timeline-item-actions > .timeline-primary-actions > .btn-ghost.btn:nth-child(3) > span"
+            ],
+            [
+              ".timeline-item:nth-child(2) > .timeline-item-top > .timeline-time"
+            ],
+            [
+              ".timeline-item:nth-child(2) > .timeline-item-top > .timeline-badges > .badge-overdue.badge"
+            ],
+            [
+              ".timeline-item:nth-child(2) > .timeline-title"
+            ],
+            [
+              ".timeline-item:nth-child(2) > .timeline-cue"
+            ],
+            [
+              ".timeline-item:nth-child(2) > .timeline-item-actions > .timeline-primary-actions > .btn-soft.btn > span"
+            ],
+            [
+              ".timeline-item:nth-child(2) > .timeline-item-actions > .timeline-primary-actions > .btn-ghost.btn:nth-child(2) > span"
+            ],
+            [
+              ".timeline-item:nth-child(2) > .timeline-item-actions > .timeline-primary-actions > .btn-ghost.btn:nth-child(3) > span"
+            ],
+            [
+              ".timeline-item:nth-child(3) > .timeline-item-top > .timeline-time"
+            ],
+            [
+              ".timeline-item:nth-child(3) > .timeline-item-top > .timeline-badges > .badge-overdue.badge"
+            ],
+            [
+              ".timeline-item:nth-child(3) > .timeline-title"
+            ],
+            [
+              ".timeline-item:nth-child(3) > .timeline-cue"
+            ],
+            [
+              ".timeline-item:nth-child(3) > .timeline-item-actions > .timeline-primary-actions > .btn-soft.btn > span"
+            ],
+            [
+              ".timeline-item:nth-child(3) > .timeline-item-actions > .timeline-primary-actions > .btn-ghost.btn:nth-child(2) > span"
+            ],
+            [
+              ".timeline-item:nth-child(3) > .timeline-item-actions > .timeline-primary-actions > .btn-ghost.btn:nth-child(3) > span"
+            ],
+            [
+              ".timeline-item:nth-child(4) > .timeline-item-top > .timeline-time"
+            ],
+            [
+              ".timeline-item:nth-child(4) > .timeline-item-top > .timeline-badges > .badge-overdue.badge"
+            ],
+            [
+              ".timeline-item:nth-child(4) > .timeline-title"
+            ],
+            [
+              ".timeline-item:nth-child(4) > .timeline-cue"
+            ],
+            [
+              ".timeline-item:nth-child(4) > .timeline-item-actions > .timeline-primary-actions > .btn-soft.btn > span"
+            ],
+            [
+              ".timeline-item:nth-child(4) > .timeline-item-actions > .timeline-primary-actions > .btn-ghost.btn:nth-child(2) > span"
+            ],
+            [
+              ".timeline-item:nth-child(4) > .timeline-item-actions > .timeline-primary-actions > .btn-ghost.btn:nth-child(3) > span"
+            ],
+            [
+              ".timeline-item:nth-child(5) > .timeline-item-top > .timeline-time"
+            ],
+            [
+              ".timeline-item:nth-child(5) > .timeline-item-top > .timeline-badges > .badge-overdue.badge"
+            ],
+            [
+              ".timeline-item:nth-child(5) > .timeline-title"
+            ],
+            [
+              ".timeline-item:nth-child(5) > .timeline-cue"
+            ],
+            [
+              ".timeline-item:nth-child(5) > .timeline-item-actions > .timeline-primary-actions > .btn-soft.btn > span"
+            ],
+            [
+              ".timeline-item:nth-child(5) > .timeline-item-actions > .timeline-primary-actions > .btn-ghost.btn:nth-child(2) > span"
+            ],
+            [
+              ".timeline-item:nth-child(5) > .timeline-item-actions > .timeline-primary-actions > .btn-ghost.btn:nth-child(3) > span"
+            ],
+            [
+              ".timeline-item:nth-child(6) > .timeline-item-top > .timeline-time"
+            ],
+            [
+              ".timeline-item:nth-child(6) > .timeline-item-top > .timeline-badges > .badge-overdue.badge"
+            ],
+            [
+              ".timeline-item:nth-child(6) > .timeline-title"
+            ],
+            [
+              ".timeline-item:nth-child(6) > .timeline-cue"
+            ],
+            [
+              ".timeline-item:nth-child(6) > .timeline-item-actions > .timeline-primary-actions > .btn-soft.btn > span"
+            ],
+            [
+              ".timeline-item:nth-child(6) > .timeline-item-actions > .timeline-primary-actions > .btn-ghost.btn:nth-child(2) > span"
+            ],
+            [
+              ".timeline-item:nth-child(6) > .timeline-item-actions > .timeline-primary-actions > .btn-ghost.btn:nth-child(3) > span"
+            ],
+            [
+              ".timeline-item:nth-child(7) > .timeline-item-top > .timeline-time"
+            ],
+            [
+              ".timeline-item:nth-child(7) > .timeline-item-top > .timeline-badges > .badge-overdue.badge"
+            ],
+            [
+              ".timeline-item:nth-child(7) > .timeline-title"
+            ],
+            [
+              ".timeline-item:nth-child(7) > .timeline-cue"
+            ],
+            [
+              ".timeline-item:nth-child(7) > .timeline-item-actions > .timeline-primary-actions > .btn-soft.btn > span"
+            ],
+            [
+              ".timeline-item:nth-child(7) > .timeline-item-actions > .timeline-primary-actions > .btn-ghost.btn:nth-child(2) > span"
+            ],
+            [
+              ".timeline-item:nth-child(7) > .timeline-item-actions > .timeline-primary-actions > .btn-ghost.btn:nth-child(3) > span"
+            ],
+            [
+              ".timeline-item-guided > .timeline-item-top > .timeline-time"
+            ],
+            [
+              ".timeline-badges > .badge-active.badge"
+            ],
+            [
+              ".timeline-item-guided > .timeline-title"
+            ],
+            [
+              ".timeline-item-guided > .timeline-cue"
+            ],
+            [
+              ".btn-ghost.btn:nth-child(1) > span"
+            ],
+            [
+              ".timeline-item-guided > .timeline-item-actions > .timeline-primary-actions > .btn-ghost.btn:nth-child(2) > span"
+            ],
+            [
+              ".shortcut-item:nth-child(1) > span"
+            ],
+            [
+              ".shortcut-item:nth-child(2) > span"
+            ],
+            [
+              ".shortcut-item:nth-child(3) > span"
+            ],
+            [
+              "footer > span"
+            ]
+          ]
+        }
+      ]
+    }
+  ]
+}

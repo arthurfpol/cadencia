@@ -61,14 +61,16 @@ export function HeaderBar({
           type="button"
           className="btn btn-secondary"
           onClick={onToggleTheme}
-          aria-label={theme === 'dark' ? 'Ativar tema claro' : 'Ativar tema escuro'}
+          aria-label={
+            theme === 'dark' ? 'Ativar tema Neblina (claro)' : 'Ativar tema Noturno (escuro)'
+          }
         >
           {theme === 'dark' ? (
             <Sun size={16} aria-hidden="true" />
           ) : (
             <Moon size={16} aria-hidden="true" />
           )}
-          <span>{theme === 'dark' ? 'Tema claro' : 'Tema escuro'}</span>
+          <span>{theme === 'dark' ? 'Neblina' : 'Noturno'}</span>
         </button>
       </div>
     </header>

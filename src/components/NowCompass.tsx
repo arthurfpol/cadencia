@@ -251,7 +251,12 @@ export function NowCompass({
       </div>
 
       {/* Cronômetro Guiado */}
-      <div className="timer-module" role="group" aria-labelledby="timer-group-label">
+      <div
+        className="timer-module"
+        role="group"
+        aria-labelledby="timer-group-label"
+        data-running={timer.isRunning ? 'true' : 'false'}
+      >
         <div className="timer-top">
           <div>
             <div className="timer-label-row">
@@ -259,8 +264,13 @@ export function NowCompass({
                 Tempo restante sugerido
               </span>
             </div>
-            <div className="timer-digits" role="timer" aria-live="off">
-              {timer.formattedTime}
+            <div className="timer-readout">
+              <span className="timer-ghost" aria-hidden="true">
+                88:88
+              </span>
+              <div className="timer-digits" role="timer" aria-live="off">
+                {timer.formattedTime}
+              </div>
             </div>
           </div>
           <span className="timer-status-text" aria-live="polite">

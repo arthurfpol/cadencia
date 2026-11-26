@@ -57,3 +57,22 @@ Alinhamento predominantemente à esquerda para leitura rápida de sequências te
 - **Gatilho de início**: primeira ação física simples (até 2 min) que destrava o começo do bloco.
 - **Piso mínimo**: versão essencial reduzida do bloco para dias de baixa energia, preservando a continuidade.
 - **Recalibrar horários**: ajustar os blocos pendentes a partir do horário atual sem mensagens punitivas.
+
+---
+
+## 7. v3 — Letreiro de Sódio (Cyberpunk Tátil, 100% Offline)
+
+Na v3, o **Cadência** foi portado para aplicativo desktop nativo Windows (Electron) 100% offline com fontes embarcadas via `@fontsource` (`Chakra Petch`, `IBM Plex Sans` e `JetBrains Mono`) e direção visual **Letreiro de Sódio**:
+- **Temas**: **Noturno** (padrão, base violeta-tinta `#130f22` em vez de preto puro, âmbar de sódio `#ffb224` para ação/foco atual, ciano `#52e0ff` para dados e cronômetro LCD, magenta `#ff5c93` para alertas/conflitos) e **Neblina** (variação diurna sobre `#ece8f4` / `#f6f3fb`).
+- **Geometria e detalhes táteis**: painéis chanfrados (`clip-path`), trilha do dia com nós em losango, barra de progresso segmentada em blocos discretos, mostrador LCD com dígitos fantasma (`88:88`) e barra de título nativa integrada (`titleBarOverlay`).
+
+### Tabela de Contraste Medido (v3, MCP `web-design-toolbox/wcag_contrast`)
+
+| Papel Semântico | Noturno (Texto / Fundo) | Contraste Noturno | Neblina (Texto / Fundo) | Contraste Neblina |
+| :--- | :--- | :--- | :--- | :--- |
+| Texto primário | `#EEE8FF` / `#130F22` | **15,75:1** (AAA) | `#1A1530` / `#F6F3FB` | **16,1:1** (AAA) |
+| Texto secundário em painel | `#A89BC9` / `#1B1630` | **6,81:1** (AA) | `#4A4166` / `#F6F3FB` | **8,54:1** (AAA) |
+| Botão primário (âmbar sódio) | `#1A1206` / `#FFB224` | **10,28:1** (AAA) | `#1A1206` / `#FFB224` | **10,28:1** (AAA) |
+| Alerta / conflito (magenta) | `#FF5C93` / `#1B1630` | **5,98:1** (AA) | `#B0145A` / `#F6F3FB` | **6,18:1** (AA) |
+| Tempo e dados (ciano) | `#52E0FF` / `#1B1630` | **11,18:1** (AAA) | `#006A84` / `#F6F3FB` | **5,64:1** (AA) |
+| Destaque âmbar suave | `#FFC964` / `#2A1E05` | **10,72:1** (AAA) | `#7A4A00` / `#FFF1D6` | **6,70:1** (AA) |
